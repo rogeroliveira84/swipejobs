@@ -1,4 +1,4 @@
-# SWIPEJOBS TEST APP
+# SwipeJobs App
 
 Developed by Roger Oliveira.
 
