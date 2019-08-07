@@ -1,6 +1,6 @@
 import React from "react";
-import { dataMock } from './api/data.js';
-import './app.css';
+import { dataMock } from '../../api/data';
+import './app.scss';
 
 const App = () =>
     <div className="app">
