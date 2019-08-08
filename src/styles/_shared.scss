@@ -1,0 +1,38 @@
+// variables ------------------------
+
+$colors: (
+  black: #000,
+  gray: #9e9e9e,
+  blue: #00a4dc
+);
+
+$fontSizes: (
+  small: 13px,
+  medium: 14px,
+  large: 15px
+);
+
+// mixins ---------------------------
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+// logics ---------------------------
+
+@each $fontSize, $size in $fontSizes {
+  .text-#{$fontSize} {
+    font-size: $size;
+  }
+}
+
+@each $colorName, $color in $colors {
+  .highlighted-#{$colorName} {
+    color: $color;
+    text-decoration: underline;
+  }
+
+  .text-#{$colorName} {
+    color: $color;
+  }
+}

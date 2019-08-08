@@ -1,11 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'public'),
     },
     module: {
         rules: [
@@ -32,8 +33,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            favicon: 'public/favicon.ico',
             filename: 'index.html',
             template: 'public/index.html'
         })
-    ]
+    ],
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
 };
