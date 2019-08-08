@@ -11,6 +11,16 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:2000](http://localhost:2000) to view it in the browser.
 
+### `npm start-prod`
+
+Runs the app in the production mode.<br>
+Open [http://localhost:2200](http://localhost:2200) to view it in the browser.
+
+### `npm run test`
+
+Runs all tests, *coverage 100%*
+Test libraries: Jest + Enzyme
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
