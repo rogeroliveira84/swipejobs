@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'dist'),
     },
     module: {
         rules: [
@@ -33,7 +33,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            favicon: 'public/favicon.ico',
             filename: 'index.html',
             template: 'public/index.html'
         })

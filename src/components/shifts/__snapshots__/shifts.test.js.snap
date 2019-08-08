@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shifts Component tests... renders and matches the snapshot 1`] = `
+Array [
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Mon, Sep 05 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Tue, Sep 06 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Wed, Sep 07 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Thu, Sep 08 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Fri, Sep 09 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Mon, Sep 12 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Tue, Sep 13 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Wed, Sep 14 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Thu, Sep 15 7:00 AM AEST"
+    />
+  </div>,
+  <div
+    className="text-gray text-small bold date-part-row"
+  >
+    <DateParts
+      dateString="Fri, Sep 16 7:00 AM AEST"
+    />
+  </div>,
+]
+`;

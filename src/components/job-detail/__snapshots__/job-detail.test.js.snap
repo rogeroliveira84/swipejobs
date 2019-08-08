@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobDetail Component tests... renders and matches the snapshot 1`] = `
+<div>
+  <header
+    className="header"
+  >
+    <div
+      className="header-item"
+    />
+    <div
+      className="header-item header-item--title"
+    >
+      Jobs Available
+    </div>
+  </header>
+  <section
+    className="detail"
+  >
+    <div
+      className="detail-header__row ptb-5"
+    >
+      <img
+        alt="logo"
+        className="detail-header logo"
+        src="https://static.wixstatic.com/media/dc0d61_854a54df0f1049bcbb20e2f9a64236eb.png/v1/fill/w_112,h_112,al_c,usm_0.66_1.00_0.01/dc0d61_854a54df0f1049bcbb20e2f9a64236eb.png"
+      />
+      <div
+        className="detail-header"
+      >
+        <div
+          className="detail-header__row text-large black bold"
+        >
+          Construction and Releated Workers - General
+        </div>
+        <div
+          className="detail-header__row sub-title bold"
+        >
+          C.D. Barnes and Associates
+        </div>
+        <div
+          className="detail-header__row text-small text-gray bold"
+        >
+          8.50/hour
+        </div>
+        <div
+          className="detail-header__row text-medium text-gray bold"
+        >
+          Mon, Sep 05 - Fri, Sep 16
+        </div>
+      </div>
+    </div>
+    <div
+      className="text-large text-black bold ptb-5"
+    >
+      If you take this job you are agreeing to work ALL DAYS.
+    </div>
+    <div
+      className="shifts"
+    >
+      <Shifts
+        dateFormat="ddd, MMM DD h:mm A z"
+        startDates={
+          Array [
+            "2016-09-04T21: 00: 00Z",
+            "2016-09-05T21: 00: 00Z",
+            "2016-09-06T21: 00: 00Z",
+            "2016-09-07T21: 00: 00Z",
+            "2016-09-08T21: 00: 00Z",
+            "2016-09-11T21: 00: 00Z",
+            "2016-09-12T21: 00: 00Z",
+            "2016-09-13T21: 00: 00Z",
+            "2016-09-14T21: 00: 00Z",
+            "2016-09-15T21: 00: 00Z",
+          ]
+        }
+      />
+    </div>
+    <hr />
+    <div
+      className="sub-title"
+    >
+      Location
+    </div>
+    <div
+      className="highlighted-blue bold"
+    >
+      123 Main Street, Tacoma, WA 98409
+    </div>
+    <hr />
+    <div
+      className="sub-title"
+    >
+      Branch:
+    </div>
+    <div
+      className="text-gray bold"
+    >
+      Tacoma
+    </div>
+    <div
+      className="highlighted-blue"
+    >
+      253
+    </div>
+    <hr />
+    <div
+      className="footer"
+    >
+      <input
+        className="text-blue"
+        type="button"
+        value="NO THANKS"
+      />
+      <input
+        className="text-blue"
+        type="button"
+        value="I'LL TAKE IT"
+      />
+    </div>
+  </section>
+</div>
+`;

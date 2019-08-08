@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { dataMock } from '../../services/api/data';
 import { shallow } from 'enzyme';
-import App from './app';
+import JobDetail from './job-detail';
 
-describe('App Component tests...', () => {
-   
+describe('JobDetail Component tests...', () => {
+    
     it('renders without crashing', () => {
-        shallow(<App />);
+        shallow(<JobDetail data={dataMock} />);
     });
 
     it('renders and matches the snapshot', () => {
-        const component = shallow(<App />);
+        const component = shallow(<JobDetail data={dataMock} />);
         expect(component).toMatchSnapshot();
      });
   });
