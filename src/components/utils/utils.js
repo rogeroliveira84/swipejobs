@@ -1,11 +1,11 @@
 import moment from 'moment-timezone';
 
-const Utils = {
-    DateFormats: {
+const utils = {
+    dateFormats: {
         full: 'ddd, MMM DD h:mm A z',
         short: 'ddd, MMM DD'
     },
-    FormatDateTime: function (value, dateFormat) {
+    formatDateTime: function (value, dateFormat) {
         if (!value || !dateFormat) {
             return null;
         }
@@ -21,15 +21,15 @@ const Utils = {
 
         return dateString;
     },
-    FormatPeriod: function (periods, dateFormat) {
+    formatPeriod: function (periods, dateFormat) {
         if (periods && periods.length > 0) {
-            const start = Utils.FormatDateTime(periods[0], dateFormat);
-            const end = Utils.FormatDateTime(periods[periods.length - 1], dateFormat);
+            const start = this.formatDateTime(periods[0], dateFormat);
+            const end = this.formatDateTime(periods[periods.length - 1], dateFormat);
             return (start && end) ? `${start} - ${end}` : '';
         }
         return '';
     },
-    FormatWage: value => `${((value ? Math.max(0, value) : 0) / 100).toFixed(2)}/hour`
+    formatWage: value => `${((value ? Math.max(0, value) : 0) / 100).toFixed(2)}/hour`
 }
 
-export default Utils;
+export default utils;

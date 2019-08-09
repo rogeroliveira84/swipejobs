@@ -1,5 +1,5 @@
 import React from 'react';
-import Utils from '../utils/utils'
+import utils from '../utils/utils'
 import './shifts.scss';
 
 const Shifts = props => {
@@ -8,7 +8,7 @@ const Shifts = props => {
 
     if (props.startDates && props.startDates.length > 0) {
         return props.startDates.map(startDate => {
-            const formatedDate = Utils.FormatDateTime(startDate, props.dateFormat);
+            const formatedDate = utils.formatDateTime(startDate, props.dateFormat);
 
             return (
                 <div className="text-gray text-small bold date-part-row">

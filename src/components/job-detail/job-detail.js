@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Shifts from '../shifts/shifts';
-import Utils from '../utils/utils';
+import utils from '../utils/utils';
 import './job-detail.scss';
 
 const JobDetail = props => {
     return (
-        <div>
+        <Fragment>
             <header className="header">
                 <div className="header-item"></div>
                 <div className="header-item header-item--title">Jobs Available</div>
@@ -16,13 +16,13 @@ const JobDetail = props => {
                     <div className="detail-header">
                         <div className="detail-header__row text-large black bold">{props.data.title}</div>
                         <div className="detail-header__row sub-title bold">{props.data.company.name}</div>
-                        <div className="detail-header__row text-small text-gray bold">{Utils.FormatWage(props.data.wagePerHourInCents)}</div>
-                        <div className="detail-header__row text-medium text-gray bold">{Utils.FormatPeriod(props.data.shifts.map(e => e.startDate), Utils.DateFormats.short)}</div>
+                        <div className="detail-header__row text-small text-gray bold">{utils.formatWage(props.data.wagePerHourInCents)}</div>
+                        <div className="detail-header__row text-medium text-gray bold">{utils.formatPeriod(props.data.shifts.map(e => e.startDate), utils.dateFormats.short)}</div>
                     </div>
                 </div>
                 <div className="text-large text-black bold ptb-5">If you take this job you are agreeing to work ALL DAYS.</div>
                 <div className="shifts">
-                    <Shifts dateFormat={Utils.DateFormats.full} startDates={props.data.shifts.map(e => e.startDate)} />
+                    <Shifts dateFormat={utils.dateFormats.full} startDates={props.data.shifts.map(e => e.startDate)} />
                 </div>
                 <hr />
                 <div className="sub-title">Location</div>
@@ -37,7 +37,7 @@ const JobDetail = props => {
                     <input type="button" className="text-blue" value="I'LL TAKE IT" />
                 </div>
             </section>
-        </div>);
+        </Fragment>);
 }
 
 export default JobDetail;
