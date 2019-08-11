@@ -4,7 +4,7 @@ import utils from './utils';
 
 describe('utils Object tests...', () => {
 
-    test('formatWage method', () => {
+    it('formatWage method', () => {
         expect(utils.formatWage(1050080)).toBe('10500.80/hour');
         expect(utils.formatWage(1050)).toBe('10.50/hour');
         expect(utils.formatWage(1000)).toBe('10.00/hour');
@@ -17,7 +17,7 @@ describe('utils Object tests...', () => {
         expect(utils.formatWage(NaN)).toBe('0.00/hour');
     });
 
-    test('formatDateTime method', () => {
+    it('formatDateTime method', () => {
         expect(utils.formatDateTime('2016-09-04T21: 00: 00Z', utils.dateFormats.full)).toBe('Mon, Sep 05 7:00 AM AEST');
         expect(utils.formatDateTime('2016-09-15T21: 00: 00Z', utils.dateFormats.full)).toBe('Fri, Sep 16 7:00 AM AEST');
         expect(utils.formatDateTime(null, null)).toBe(null);
@@ -25,7 +25,7 @@ describe('utils Object tests...', () => {
         expect(utils.formatDateTime(NaN, NaN)).toBe(null);
     });
 
-    test('formatPeriod method', () => {
+    it('formatPeriod method', () => {
         const period1 = ['2016-09-04T21: 00: 00Z', '2016-09-15T21: 00: 00Z'];
         const period2 = ['2016-09-04T21: 00: 00Z'];
 
